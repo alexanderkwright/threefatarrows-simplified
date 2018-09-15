@@ -1,6 +1,6 @@
 .masked-text {
-  background: url('/img/masked-gradient.jpg') no-repeat;
+  background-image: linear-gradient(150deg, $c_gradient_pink 0%, $c_gradient_purple 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  mix-blend-mode: color-burn;
+  mix-blend-mode: multiply;
 }
