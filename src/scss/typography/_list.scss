@@ -31,3 +31,28 @@
     }
   }
 }
+
+dl {
+  margin: 0;
+  padding: 0;
+  
+  dt {
+    display: inline-block;
+    width: 80px;
+    margin-right: $sp_base * 2;
+    
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  
+  dd {
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: $sp_base * 3;
+    width: calc(100% - (130px));
+    vertical-align: top;
+    
+    &:last-of-type { margin-bottom: 0; }
+  }
+}
