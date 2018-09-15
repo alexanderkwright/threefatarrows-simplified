@@ -1,0 +1,9 @@
+.intro {
+  margin-bottom: $sp_base * 3;
+  position: relative;
+  z-index: 1;
+  
+  .button {
+    margin-top: $sp_base;
+  }
+}
