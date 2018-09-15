@@ -4,7 +4,6 @@
   const blobImg = document.querySelector('.blob-img');
   const svgFriction = 0.075;
   const imgFriction = 0.25;
-  //const blobXPos = '77px';
   
   const throttle = (type, name, obj) => {
     const newObj = obj || window;
