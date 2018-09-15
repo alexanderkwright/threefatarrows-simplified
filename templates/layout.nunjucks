@@ -60,7 +60,7 @@
   {% include "includes/social.nunjucks" %}
   {% include "partials/header.nunjucks" %}
 
-  <main class="site-content" role="content">
+  <main class="content" role="content">
     {% block site_content %}{% endblock %}
   </main>
 
