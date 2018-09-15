@@ -19,8 +19,6 @@ body {
   margin: 0;
   //padding: $sp_base * 4.375;
   padding: calc(16px + (70 - 16) * ((100vw - 320px) / (1280 - 320)));
-  
-  overflow-x: hidden;
 }
 
 img, svg {
