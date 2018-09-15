@@ -66,6 +66,8 @@
 
   {% include "partials/footer.nunjucks" %}
   
+  <script src="/js/main.min.js"></script>
+  
   {% block footer_scripts %}{% endblock %}
 
 </body>

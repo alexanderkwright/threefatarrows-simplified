@@ -19,10 +19,6 @@ const paths = {
   css: {
     src: './src/scss/',
     dest: './public/css/'
-  },
-  images: {
-    src: './src/img/**/*',
-    dest: './public/img/'
   }
 };
 
@@ -73,7 +69,7 @@ gulp.task('scripts', () => {
 
     this.emit('end');
   })
-  .pipe(source('index.min.js'))
+  .pipe(source('main.min.js'))
   .pipe(buffer())
   .pipe(plugins().sourcemaps.init({'loadMaps': true}))
   .pipe(plugins().sourcemaps.write('.'))
@@ -141,11 +137,11 @@ gulp.task('jsmin', () => {
   });
 
   return browserify({
-    'entries': [paths.js.src + 'index.js'],
+    'entries': [paths.js.src + 'main.js'],
     'debug': false
   })
   .bundle()
-  .pipe(source('index.min.js'))
+  .pipe(source('main.min.js'))
   .pipe(envs)
   .pipe(buffer())
   .pipe(plugins().uglify().on('error', plugins().util.log))
