@@ -15,7 +15,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Beautiful Websites Everyone Loves to Use" />
   <meta property="og:description" content="Three Fat Arrows works with businesses to create beautiful websites that are fast, accessible, and easy to use so you can focus on what matters." />
-  <meta property="og:image" content="https://threefatarrows.com/img/social-banner.jpg" />
+  <meta property="og:image" content="https://threefatarrows.com/img/social-banner2x.jpg" />
   {% endblock share_meta %}
   
   <meta name="google-site-verification" content="o_39kYHnuygV89bR1I3-8fmJlQrGNBMuXHX3qWJ74GY" />
