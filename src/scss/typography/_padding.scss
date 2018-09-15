@@ -1,0 +1,4 @@
+.padding-all--small {
+  padding: $sp_base * 1.5;
+  @media (min-width: 1000px) { padding: $sp_base * 2.5; }
+}

@@ -1,0 +1,33 @@
+.list {
+  
+  &--no-dot { list-style: none; }
+  
+  &--no-style {
+    margin: 0;
+    padding: 0;
+  }
+  
+  &--centered {
+    &-mobile {
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+      
+      @media (min-width: 800px) {
+        max-width: initial;
+        margin-left: initial;
+        margin-right: initial;
+      }
+    }
+  }
+  
+  &--spaced {
+    li {
+      margin-bottom: $sp_base * 2;
+      
+      @media (min-width: 800px) {
+        margin-bottom: $sp_base;
+      }
+    }
+  }
+}

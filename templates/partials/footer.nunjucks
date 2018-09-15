@@ -1,0 +1,29 @@
+<footer class="site-footer padding-vertical-half" role="footer">
+  <ul class="site-footer__links">
+    <li class="email">
+      <a href="mailto:hello@threefatarrows.com">hello@threefatarrows.com</a>
+    </li>
+    <li>
+      <a href="https://dribbble.com/akwright/" target="_blank">
+        <svg height="18" width="18" viewBox="0 0 24 24"><use class="social" xlink:href="#dribbble"></use></svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://codepen.io/akwright/" target="_blank">
+        <svg height="18" width="18" viewBox="0 0 24 24"><use class="social" xlink:href="#codepen"></use></svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/akwright/" target="_blank">
+        <svg height="18" width="18" viewBox="0 0 24 24"><use class="social" xlink:href="#github"></use></svg>
+      </a>
+    </li>
+  </ul>
+  <p class="site-footer__legal margin-top">
+    <span>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Three Fat Arrows, LLC.</span>
+    <span class="hide-for-mobile">&nbsp; &bull; &nbsp;</span>
+    <span>All Rights Reserved.</span>
+    <span><span class="hide-for-mobile">&nbsp; &bull; &nbsp;</span>
+    <a href="https://www.bible.com/bible/116/1CO.15.58.NLT" target="_blank">1 Cor 15:58</a></span>
+  </p>
+</footer>

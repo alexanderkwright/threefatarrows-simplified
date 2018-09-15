@@ -1,0 +1,57 @@
+.lead-text {
+  color: $c_orange;
+  font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (1280 - 320)));
+
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  position: relative;
+  
+  color: $c_orange;
+  mix-blend-mode: difference;
+  
+    
+  @media (min-width: 940px) {
+    text-decoration: none;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      
+      background-color: currentColor;
+      transition: .2s ease;
+    }
+    
+    &::before {
+      top: 50%;
+      left: 0;
+      width: 0;
+      
+      transform: translateY(-50%);
+      
+    }
+    
+    &::after {
+      bottom: 1px;
+      right: 0;
+      width: 100%;
+      transition-delay: .075s;
+    }
+    
+    &:hover {
+      &::before { width: 100%; }
+      &::after { width: 0; }
+    }
+  }
+  
+  &.nolink {
+    color: currentColor;
+  }
+}
+
+address {
+  font-style: normal;
+}

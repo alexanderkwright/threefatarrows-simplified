@@ -1,0 +1,15 @@
+.home {
+  &-hero {
+    background: url('../img/homepage-hero-bg_small.jpg') no-repeat;
+    background-size: cover;
+    
+    @media (min-width: 600px) {
+      background: url('../img/homepage-hero-bg2.jpg') no-repeat center;
+    }
+    
+    @media (min-width: 1200px) {
+      min-height: 100vh;
+      max-height: 800px;
+    }
+  }
+}

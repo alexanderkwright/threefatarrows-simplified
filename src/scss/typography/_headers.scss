@@ -1,0 +1,26 @@
+h1, h2 {
+  margin-top: $sp_base * .25;
+  margin-bottom: $sp_base * .5;
+
+  font-family: $f_headers;
+  font-weight: 700;
+  
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: calc(32px + (114 - 32) * ((100vw - 320px) / (1280 - 320)));
+  letter-spacing: 3px;
+  line-height: .923;
+}
+h2 {
+  margin-top: $sp_base;
+  margin-bottom: $sp_base * 2;
+  
+  font-size: calc(28px + (100 - 28) * ((100vw - 320px) / (1280 - 320)));
+  letter-spacing: calc(36px + (50 - 36) * ((100vw - 320px) / (1280 - 320)));
+  
+  @media (min-width: 1000px) {
+    margin-bottom: $sp_base;
+  }
+}

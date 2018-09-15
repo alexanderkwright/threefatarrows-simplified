@@ -1,0 +1,9 @@
+.hide-for {
+  &-mobile {
+    display: none !important;
+    
+    @media (min-width: 800px) {
+      display: initial !important;
+    }
+  }
+}

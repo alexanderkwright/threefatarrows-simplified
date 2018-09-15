@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{% block site_title %}{% endblock %}Three Fat Arrows, LLC</title>
+
+  <meta name="description" content="Three Fat Arrows works with businesses to create beautiful websites that are fast, accessible, and easy to use so you can focus on what matters.">
+  <meta name="keywords" content="websites, small business, syracuse, fast, fast websites, accessible, accessibility, accessible websites, easy to use, easy to use websites, user experience, ux, design, graphic design, website design, new york, central new york">
+  <meta itemprop="name" content="Three Fat Arrows, LLC">
+  <meta itemprop="description" content="Three Fat Arrows works with businesses to create beautiful websites that are fast, accessible, and easy to use so you can focus on what matters.">
+  <meta itemprop="image" content="https://threefatarrows.com/img/tfa-logo@2x.png">
+  
+  {% block share_meta %}
+  <meta property="og:url" content="https://threefatarrows.com/schedule-an-appointment/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Beautiful Websites Everyone Loves to Use" />
+  <meta property="og:description" content="Three Fat Arrows works with businesses to create beautiful websites that are fast, accessible, and easy to use so you can focus on what matters." />
+  <meta property="og:image" content="https://threefatarrows.com/img/social-banner.jpg" />
+  {% endblock share_meta %}
+  
+  <meta name="google-site-verification" content="o_39kYHnuygV89bR1I3-8fmJlQrGNBMuXHX3qWJ74GY" />
+
+  <script>
+    WebFontConfig = {
+      google: {
+        families: ['Archivo+Narrow:700', 'Chivo:400,700']
+      }
+    };
+
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+    !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+    loadCSS("/css/threefatarrows.css");
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119577977-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119577977-1');
+</script>
+
+
+  <link rel="mask-icon" href="/pinned-tfa-logo.svg" color="#000000">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+</head>
+<body class="site {% block page_class %}{% endblock %}">
+  {% include "includes/social.nunjucks" %}
+  {% include "partials/header.nunjucks" %}
+
+  <main class="site-content" role="content">
+    {% block site_content %}{% endblock %}
+  </main>
+
+  {% include "partials/footer.nunjucks" %}
+  
+  {% block footer_scripts %}{% endblock %}
+
+</body>

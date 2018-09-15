@@ -1,0 +1,6 @@
+.masked-text {
+  background: url('/img/masked-gradient.jpg') no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: color-burn;
+}

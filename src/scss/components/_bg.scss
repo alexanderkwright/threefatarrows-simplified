@@ -1,0 +1,15 @@
+.bg {
+  &--white {
+    background: $c_white;
+  }
+  
+  &--black {
+    background: $c_black;
+    color: $c_white;
+  }
+  
+  &--gray {
+    background: $c_gray;
+    color: $c_black;
+  }
+}

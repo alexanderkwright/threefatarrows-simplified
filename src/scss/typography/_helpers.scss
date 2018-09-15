@@ -1,0 +1,30 @@
+.text-center {
+  text-align: center;
+  
+  &--mobile {
+    text-align: center;
+    @media (min-width: 500px) { text-align: left; }
+  }
+}
+
+.maxw {
+  max-width: 52ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tinyw {
+  @media (min-width: 500px) { max-width: 18ch; }
+}
+
+.mauto {
+  margin-left: auto;
+  margin-right: auto;
+  
+  &--mobile {
+    @media (max-width: 499px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
