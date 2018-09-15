@@ -58,7 +58,7 @@
 </head>
 <body style="opacity:0;" class="site {% block page_class %}{% endblock %}">
   {% include "includes/social.nunjucks" %}
-  {% include "partials/header.nunjucks" %}
+  {% block site_header %}{% include "partials/header.nunjucks" %}{% endblock %}
 
   <main class="content" role="content">
     {% block site_content %}{% endblock %}

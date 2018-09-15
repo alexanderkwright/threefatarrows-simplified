@@ -1,0 +1,6 @@
+.four-oh-four {
+  h2 {
+    font-size: calc(21px + (60 - 21) * ((100vw - 320px) / (1280 - 320)));
+    letter-spacing: calc(10px + (30 - 10) * ((100vw - 320px) / (1280 - 320)));
+  }
+}
