@@ -3,4 +3,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   mix-blend-mode: multiply;
+  position: relative;
+  z-index: 1;
 }
