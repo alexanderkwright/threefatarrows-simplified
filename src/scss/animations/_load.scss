@@ -1,0 +1,28 @@
+body {
+  animation: .2s fadeIn .15s forwards;
+}
+
+$eles: 'header', 'intro', 'blob-svg', 'blob-img', 'about', 'footer';
+$easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+@each $ele in $eles {
+  $i: index($eles, $ele);
+  .#{$ele} {
+    opacity: 0;
+    @if $ele == 'blob-svg' or $ele == 'blob-img' {
+      animation: fadeIn .5s $easing .15s * $i forwards;
+    } @else {
+      animation: fadeIn .5s $easing .25s * $i forwards,
+                 levitate .5s $easing .25s * $i forwards;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes levitate {
+  from { transform: translateY(10px); }
+  to   { transform: translateY(0); }
+}

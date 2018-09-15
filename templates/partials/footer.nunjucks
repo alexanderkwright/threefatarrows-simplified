@@ -1,4 +1,4 @@
-<footer class="footer padding-vertical-half" role="footer">
+<footer class="footer" role="footer">
   <ul class="footer__links">
     <li class="email">
       <a href="mailto:hello@threefatarrows.com">hello@threefatarrows.com</a>
