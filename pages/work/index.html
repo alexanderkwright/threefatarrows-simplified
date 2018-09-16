@@ -5,5 +5,24 @@
 {% block page_class %}work{% endblock %}
 
 {% block site_content %}
-
+  <section class="intro text-center">
+    <p class="lead-text">A collection of work from the past 5 years.</p>
+  </section>
+  
+  <section class="workItems about">
+  {% for work in pages.Work %}
+    {% if loop.index0 !== 8 %}
+    <div class="workItem padding-all--small">
+      <div class="workItem-content padding-all--small">
+        <h2 class="workItem-title">{{ work.title }}</h2>
+        <p class="workItem-subtitle">{{ work.year }}</p>
+        <p class="workItem-meta">{{ work.type }}</p>
+        <p class="workItem-copy">{{ work.excerpt }}</p>
+        <a class="button" href="{{ work.url }}" target="_blank">See Live Site</a>
+      </div>
+      <img class="workItem-image" src="{{ work.image }}" alt="{{ work.alt }}">
+    </div>
+    {% endif %}
+  {% endfor %}
+  </section>
 {% endblock %}

@@ -2,8 +2,11 @@
   margin-bottom: $sp_base * 1;
 }
 @keyframes grow {
+  50% {
+    opacity: 0;
+  }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.5);
     opacity: 0;
   }
 }
@@ -62,7 +65,7 @@ button.button {
       
       &::before {
         animation-name: grow;
-        animation-delay: .1s;
+        animation-delay: .115s;
       }
     }
     

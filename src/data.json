@@ -1,85 +1,81 @@
 {
   "NavItems" : [
     {
-      "slug": "case-studies",
-      "name": "Case Studies"
-    },
-    {
-      "slug": "about",
-      "name": "About"
-    },
-    {
-      "slug": "schedule-an-appointment",
-      "name": "Schedule An Appointment"
-    },
-    {
-      "slug": "contact",
-      "name": "Contact"
+      "slug": "work",
+      "name": "Work"
     }
   ],
   "pages": {
-    "CaseStudies": [
+    "Work": [
       {
-        "url": "/case-studies/emmas-hope/",
-        "image": "/img/case-studies/landing/emmas-hope_cover.jpg",
+        "url": "https://emmashopeinc.org/",
+        "image": "/img/work/landing/emmas-hope_cover.jpg",
         "alt": "Emma with her big sister, Addy.",
         "title": "Emma's Hope",
+        "year": "2018",
         "type": "Web • UX • Print",
         "excerpt": "Running the gamut from sketching and ideation through marketing, print, collateral, and web for the charity started by my wife and I, in memory of our daughter, Emma."
       },
       {
         "url": "/case-studies/incipia/",
-        "image": "/img/case-studies/landing/incipia_cover.jpg",
+        "image": "/img/work/landing/incipia_cover.jpg",
         "alt": "Background pattern of low poly triangles.",
         "title": "Incipia",
+        "year": "2016",
         "type": "Web",
         "excerpt": "I partnered with the team at Incipia to create an engaging digital presence, making their startup stand out among the competition."
       },
       {
-        "url": "/case-studies/jared-bracci/",
-        "image": "/img/case-studies/landing/jared-bracci_cover.jpg",
+        "url": "https://jaredbracci.com/",
+        "image": "/img/work/landing/jared-bracci_cover.jpg",
         "alt": "Jared's custom red and brown guitar resting on a guitar stand.",
         "title": "Jared Bracci",
+        "year": "2018",
         "type": "Web • UI",
         "excerpt": "Jared is an eclectic artist, truly a man of many talents. He needed a website that captured his personality while showcasing his music."
       },
       {
-        "url": "/case-studies/network-of-international-christian-schools/",
-        "image": "/img/case-studies/landing/nics_cover.jpg",
+        "url": "https://nics.org/",
+        "image": "/img/work/landing/nics_cover.jpg",
         "alt": "The NICS website on an iPad with a pencil, flower, and stick next to it.",
         "title": "NICS",
+        "year": "2018",
         "type": "UX • Strategy • Web",
         "excerpt": "The Network of International Christian Schools needed an updated website driven by user data to drive more traffic, and ultimately applicants."
       },
       {
-        "url": "/case-studies/blue-letter-bible/",
-        "image": "/img/case-studies/landing/blb_cover.jpg",
+        "url": "https://blb.org/",
+        "image": "/img/work/landing/blb_cover.jpg",
         "alt": "The blue letter bible website on two iphones with a Bible in the background.",
         "title": "Blue Letter Bible",
+        "year": "2017",
         "type": "UX • UI • Web",
         "excerpt": "Blue Letter Bible required an upgraded mobile experience for their website which provies a suite of Bible study tools for millions of users."
       },
       {
-        "url": "/case-studies/key-life/",
-        "image": "/img/case-studies/landing/key-life_cover.jpg",
+        "url": "https://keylife.org/",
+        "image": "/img/work/landing/key-life_cover.jpg",
         "alt": "Erik Guzman, a contributor, smoking a pipe.",
         "title": "Key Life",
+        "year": "2017",
         "type": "UX • UI",
         "excerpt": "Key Life Network wanted to stand out among the crowd of ministry websites. They wanted a fresh website that was easy to navigate and use."
       },
       {
-        "url": "/case-studies/the-bowery-mission/",
-        "image": "/img/case-studies/landing/bowery_cover.jpg",
+        "url": "https://bowery.org/",
+        "image": "/img/work/landing/bowery_cover.jpg",
         "alt": "A gentleman wearing gloves serving food in the Bowery kitchen.",
         "title": "The Bowery Mission",
+        "year": "2017",
         "type": "UX • Strategy",
         "excerpt": "The Bowery Mission needed a refreshed and refocused website that would allow visitors to more easily and quickly understand who they are and drive donations."
       },
       {
-        "url": "/case-studies/mission-health-concepts/",
-        "image": "/img/case-studies/landing/mhc_cover.jpg",
+        "url": "https://missionhealthconcepts.com/",
+        "image": "/img/work/landing/mhc_cover.jpg",
         "alt": "Emma with her big sister, Addy.",
         "title": "Mission Health Concepts",
+        "year": "2015",
         "type": "Web",
         "excerpt": "Mission Health Concepts was in desparate need of an updated website to bring their design and navigation into the twenty-first century."
       }

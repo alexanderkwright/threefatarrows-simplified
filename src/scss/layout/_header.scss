@@ -1,6 +1,12 @@
 .header {  
   &-title {
     margin-bottom: 0;
+    
+    a {
+      color: inherit;
+      &::before,
+      &::after { display: none; }
+    }
   }
   
   &-subtitle {
