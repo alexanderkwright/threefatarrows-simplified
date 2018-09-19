@@ -2,6 +2,13 @@
   margin-bottom: $sp_base * 3;
   position: relative;
   z-index: 1;
+  mix-blend-mode: multiply;
+  
+  @media (max-width: 499px) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
   
   .button {
     margin-top: $sp_base;
