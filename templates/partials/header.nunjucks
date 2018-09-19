@@ -1,4 +1,4 @@
-<header class="header text-center" role="header">
+<header class="header text-center a0" role="header">
   <h1 class="header-title"><a href="/">Three Fat Arrows</a></h1>
   <p class="header-subtitle">UX • Frontend • Design • Apps</p>
 </header>

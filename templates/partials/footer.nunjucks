@@ -1,4 +1,4 @@
-<footer class="footer" role="footer">
+<footer class="footer a5" role="footer">
   <ul class="footer__links">
     <li class="email">
       <a href="mailto:hello@threefatarrows.com">hello@threefatarrows.com</a>

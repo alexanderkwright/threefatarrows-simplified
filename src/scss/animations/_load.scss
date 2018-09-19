@@ -2,13 +2,13 @@ body {
   animation: .2s fadeIn .15s forwards;
 }
 
-$eles: 'header', 'intro', 'blob-svg', 'blob-img', 'about', 'footer';
+$eles: 'a0', 'a1', 'a2', 'a3', 'a4', 'a5';
 $easing: cubic-bezier(0.645, 0.045, 0.355, 1);
 @each $ele in $eles {
   $i: index($eles, $ele);
   .#{$ele} {
     opacity: 0;
-    @if $ele == 'blob-svg' or $ele == 'blob-img' {
+    @if $ele == 'a2' or $ele == 'a3' {
       animation: fadeIn .5s $easing .15s * $i forwards;
     } @else {
       animation: fadeIn .5s $easing .25s * $i forwards,
