@@ -18,7 +18,11 @@
         <p class="workItem-subtitle">{{ work.year }}</p>
         <p class="workItem-meta">{{ work.type }}</p>
         <p class="workItem-copy">{{ work.excerpt }}</p>
+        {% if work.notlive == true %}
+        <p><em>Not Yet Live</em></p>
+        {% else %}
         <a class="button" href="{{ work.url }}" target="_blank">See Live Site</a>
+        {% endif %}
       </div>
       <img class="workItem-image" src="{{ work.image }}" alt="{{ work.alt }}">
     </div>

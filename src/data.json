@@ -54,6 +54,7 @@
       },
       {
         "url": "https://keylife.org/",
+        "notlive": true,
         "image": "/img/work/landing/key-life_cover.jpg",
         "alt": "Erik Guzman, a contributor, smoking a pipe.",
         "title": "Key Life",
