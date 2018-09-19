@@ -216,58 +216,5 @@
 </footer>
   
   
-  <script>
-    {
-    // Only start the scrolling of the elements when the page has been
-    // scrolled the distance of the top of the element container
-    // plus a buffer
-    
-      const workEles = [].slice.call(document.querySelectorAll('.workItem'));
-      let screenHeight = document.documentElement.clientHeight;
-      
-      const contentFriction = 0.045;
-      const imagesFriction = 0.15;
-      
-      const throttle = (type, name, obj) => {
-        const newObj = obj || window;
-        let running = false;
-        const tempFunction = () => {
-          if (running) { return; }
-          running = true;
-          requestAnimationFrame( () => {
-            newObj.dispatchEvent(new CustomEvent(name));
-            running = false;
-          });
-        };
-        newObj.addEventListener(type, tempFunction);
-      };
-      throttle('scroll', 'optimizedScroll');
-      
-      window.addEventListener('optimizedScroll', () => {
-        // Only start the scrolling if device is greater than 700px
-        if (document.documentElement.clientWidth >= 700) {
-          let distanceScrolled = window.pageYOffset;
-          
-          workEles.forEach((item, index) => {
-            let workItemTop = item.getBoundingClientRect().top;
-            let workContent = item.querySelector('.workItem-content');
-            let workImage   = item.querySelector('.workItem-image');
-            
-            // Only animate the work content and images if the work item
-            // is scrolled into view.
-            console.log(`Distance scrolled: ${distanceScrolled}`);
-            console.log(`Work Item #${index} Top: ${workItemTop}`);
-            console.log(`Half screen height: ${(screenHeight/2)}`);
-            console.log(distanceScrolled > (workItemTop - (screenHeight / 2)));
-            if ( distanceScrolled > (workItemTop - (screenHeight / 2) ) ) {
-              workContent.style.transform = `translateY(-${window.pageYOffset * contentFriction }px)`;
-              workImage.style.transform = `translateY(-${window.pageYOffset * imagesFriction }px)`;
-            }
-          });
-        }
-      });
-    }
-  </script>
-
 
 </body>
