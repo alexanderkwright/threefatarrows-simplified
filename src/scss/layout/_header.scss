@@ -1,4 +1,8 @@
-.header {  
+.header {
+  padding: 0 $sp_base;
+  
+  @media (min-width: 540px) { padding: 0; }
+  
   &-title {
     margin-bottom: 0;
     

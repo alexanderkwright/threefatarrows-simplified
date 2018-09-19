@@ -3,7 +3,7 @@
   
   &--mobile {
     text-align: center;
-    @media (min-width: 500px) { text-align: left; }
+    @media (min-width: 540px) { text-align: left; }
   }
 }
 
@@ -14,7 +14,7 @@
 }
 
 .tinyw {
-  @media (min-width: 500px) { max-width: 18ch; }
+  @media (min-width: 540px) { max-width: 18ch; }
 }
 
 .mauto {
@@ -22,7 +22,7 @@
   margin-right: auto;
   
   &--mobile {
-    @media (max-width: 499px) {
+    @media (max-width: 539px) {
       margin-left: auto;
       margin-right: auto;
     }
