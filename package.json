@@ -19,21 +19,19 @@
   "author": "Alex Wright",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^9.1.0",
-    "browser-sync": "^2.24.6",
-    "critical": "^1.3.4",
-    "gulp": "^3.9.1",
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.29.3",
+    "critical": "^5.1.0",
+    "gulp": "^4.0.1",
     "gulp-data": "^1.3.1",
     "gulp-env": "^0.4.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-notify": "^3.2.0",
-    "gulp-nunjucks-render": "^2.2.2",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sass-glob": "^1.0.9",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-util": "^3.0.8",
-    "postcss-scss": "^2.0.0"
+    "gulp-load-plugins": "^2.0.6",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss-scss": "^4.0.5"
   },
   "bugs": {
     "url": "https://github.com/akwright/threefatarrows-simplified/issues"

@@ -3,7 +3,6 @@ const plugins = require('gulp-load-plugins');
 const critical = require('critical').stream;
 const autoprefixer = require('autoprefixer');
 const browserSync = require('browser-sync');
-const notify = require('gulp-notify');
 
 const paths = {
   css: {
@@ -92,7 +91,7 @@ gulp.task('cssmin', () => {
 gulp.task('critical', function () {
   return gulp.src('public/**/*.html')
     .pipe(critical({base: 'public/', inline: true, minify: true, css: ['public/css/emmashopeinc.css']}))
-    .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
+    .on('error', function(err) { console.log(err.message); })
     .pipe(gulp.dest('public'));
 });
 
